@@ -1,0 +1,216 @@
+$cinza: #5f6368
+
+@mixin bordaArredondada($v1: 0, $v2: 0, $v3: 0, $v4: 0 )
+    border-radius: $v1 $v2 $v3 $v4
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: none
+    text-decoration: none
+
+html
+    font-family: Arial, Helvetica, sans-serif
+
+.topo
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    margin: 20px
+  @extend html
+
+header.topo span
+    padding: 10px
+&:hover
+    text-decoration: underline
+    color: $cinza
+
+a
+    text-decoration: none
+    color: rgba(0,0,0,0.87)
+    font-size: 17px
+    font-weight: 400px
+
+.gb_We
+    color: $cinza
+    opacity: 1
+    fill: currentColor
+    height: 30px
+    width: 30px
+
+.sgvIcon
+    height: 60px
+    width: 60px
+    padding: 0 10px 0 10px
+    color: #524d4d
+
+.corpo
+    display: flex
+    flex-direction: column
+
+.meio
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 109px
+    width: 100%
+    height: 575px
+img
+    height: 119px
+    width: 327px
+    margin-bottom: 40px
+
+.center
+    display: flex
+
+.busca
+    background: #fff
+    display: flex
+    align-items: center
+    border: 1px solid #dfe1e5
+    box-shadow: none
+    @include bordaArredondada(24px, 24px, 24px, 24px)
+    z-index: 3
+    height: 60px
+    margin: 0 auto
+    width: 585px
+
+&:hover
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+    border-color: rgba(223,225,229,0)
+
+.icone
+    color: #9AA0A6
+    height: 20px
+    width: 30px
+    margin: 3px 5px 3px 15px
+    cursor: pointer
+
+& sgv
+    fill: #9AA0A6
+    display: block
+    height: 100%
+    width: 100%
+
+span .icone
+    color: #9AA0A6
+
+.busc
+    background-color: transparent
+    border: none
+    margin: 0
+    font-size: 20px
+    padding: 0
+    color: rgba(0,0,0,.87)
+    word-wrap: break-word
+    outline: none
+    flex: 100%
+    height: 100%
+    -webkit-tap-highlight-color: transparent
+
+.tecl
+    flex: 1 0 auto
+    display: flex
+    cursor: pointer
+    align-items: center
+    border: 0
+    background: transparent
+    outline: none
+    padding: 0 8px
+    width: 40px
+    line-height: 44px
+
+.teclado
+    background: url(//www.gstatic.com/inputtools/images/tia.png) no-repeat center
+    height: 24px
+    width: 40px
+    vertical-align: middle
+
+.micro
+    flex: 1 0 auto
+    display: flex
+    cursor: pointer
+    align-items: center
+    border: 0
+    background: transparent
+    outline: none
+    padding: 0 8px
+    width: 45px
+    line-height: 44px
+
+.microfone
+    background: url(//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat
+    height: 24px
+    width: 24px
+    background-size: 24px
+    vertical-align: middle
+
+.button
+    display: block
+    height: 45px
+    width: auto
+    font-family: Arial, Helvetica, sans-serif
+    margin: 10px
+    border: 1px solid transparent
+    @include bordaArredondada(5px, 5px, 5px, 5px)
+    outline-style: none
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1)
+    color: $cinza
+    font-size: 18px
+    margin: 15px 8px
+    padding: 0 16px
+    line-height: 27px
+    text-align: center
+    vertical-align: middle
+
+&:hover
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1)
+    background-color: #f8f8f8
+    border: 1px solid #c6c6c6
+    color: #222
+    display: block
+
+.rodape
+    display: flex
+    flex-direction: column
+    background-color: #F2F2F2
+    width: 100%
+    height: 100px
+    border-top: 1px solid #e4e4e4
+
+& span
+    font-size: 18px
+    color: rgba(0,0,0,.54)
+    padding-left: 27px
+
+.rod
+    padding-top: 10px
+    height: 50px
+    border-bottom: 1px solid #e4e4e4
+
+.final
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: nowrap
+    background-color: #F2F2F2
+    width: 100%
+    height: 50px
+    border-bottom: 1px solid #e4e4e4
+
+.direita
+    display: flex
+    flex-wrap: nowrap
+    cursor: pointer
+
+& span:hover
+    text-decoration: underline
+
+.esquerda
+    cursor: pointer
+    margin-right: 27px
+
+& span:hover
+    text-decoration: underline
